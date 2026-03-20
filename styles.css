@@ -33,3 +33,42 @@ body, html {
     font-weight: bold;
     z-index: 1000;
 }
+
+/* Media Query for smaller screens (tablets, phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        height: auto; /* Let the height adjust based on content */
+        width: 100%; /* Full width of the screen */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .responsive-image {
+        width: 100%; /* Adjust image width for smaller screens */
+        height: auto; /* Let the image's height adjust automatically to maintain aspect ratio */
+    }
+
+    #status-bar {
+        padding: 8px 0; /* Increase padding for better readability on smaller screens */
+    }
+}
+
+/* Media Query for very small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+    body, html {
+        background-color: #d0b7a0; /* Change background color for better visibility on small screens */
+    }
+
+    .container {
+        padding: 5px; /* Reduced padding to accommodate smaller screen */
+    }
+
+    .responsive-image {
+        width: 100%; /* Ensure image is responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #status-bar {
+        padding: 10px 0; /* More padding for easier reading */
+    }
+}
